@@ -120,10 +120,24 @@
     opacity: 0;
     cursor: pointer;
 }
+.IconBtn{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width: 50%;
+    background-color: rgb(143, 218, 198);
+    border-radius: 12px;
+}
+.IconBtn .BtnIcon{
+    width: 30%;
+    height: auto;
+    justify-self: flex-start;
+}
+
 .FileInputDiv .ProxyBtn{
     margin: 1%;
     padding: 1%;
-    width: 30%;
+    width: 80%;
     cursor: pointer;
     font-family: trophy;
     border: none;
@@ -146,4 +160,18 @@
     background-color: rgb(143, 143, 218);
     color: white;
     border-radius: 12px;
+
+/*     
+    animation-name: colorChange;
+    animation-duration: 4s ;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes colorChange {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: greenyellow;
+    }
 }

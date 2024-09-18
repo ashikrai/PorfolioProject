@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { userProfileDefaultData } from '../Utils/Constants';
 import "../resources/css/profile.css"
-import { prettyDOM } from '@testing-library/react';
+import Btnicon from "../resources/images/logo.png"
+import { Button } from '@mui/material';
+import { PublishOutlined } from '@mui/icons-material';
 
 export default function Profile() {
     const [profileData, setProfileData]= useState(userProfileDefaultData);
@@ -49,7 +51,7 @@ export default function Profile() {
             <div className='ProfileData'>
                 <div className="ProfileHeader">
                     <div className="ProfilePicDiv">
-                        <img className="profilePic" src={profileData["Photo"]} />
+                        <img alt="userPhoto" className="profilePic" src={profileData["Photo"]} />
                     </div>
                     <h1 className="userName">{profileData["Name"]}</h1>
                     <div className="BioData">
@@ -80,12 +82,16 @@ export default function Profile() {
                             <p className="Tag">Photo</p>
                             <div className="FileInputDiv">
                                 <input className="profilePicInput" type="file" onChange={(event) => updateProfile(event, "photo")}/>
-                                <button onClick={changeProfileData} className="ProxyBtn" >Upload</button>
+                                <div className="IconBtn">
+                                    <button onClick={changeProfileData} className="ProxyBtn" >Upload</button>
+                                    <img className='BtnIcon' src={Btnicon} alt="Btn Icon" />
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="ProfileFooter">
                         <button onClick={changeProfileData} className="SubmitBtn" >Submit</button>
+                        <Button variant='contained' endIcon={<PublishOutlined />} > Submit </Button>
                     </div>
                 </div>
             </div>

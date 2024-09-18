@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Profile from './components/Profile';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
   return (
-    <div>
-      <Profile/>
-    </div>
+    <Router>
+      <div>
+        <Dashboard/>
+      </div>
+    </Router>
   );
 }
 

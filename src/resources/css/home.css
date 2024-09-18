@@ -1,0 +1,13 @@
+
+.activeBtn{
+    background-color: rgb(228, 228, 228);
+}
+
+.sideMenuLinks{
+    text-decoration: none;
+    color: inherit;
+}
+
+.MainContainer{
+    display: flex;
+}

@@ -1,0 +1,32 @@
+:root{
+    ---pinkColor: rgb(241, 21, 135)
+}
+.breadCrumbItem{
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(228, 230, 233); */
+    border-radius: 21px 21px 21px 21px;
+    /* padding: %; */
+    /* width: 100%; */
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.breadCrumbItem .icon{
+    padding: 5%;
+    /* color: rgb(77, 77, 77); */
+    color: var(---pinkColor);
+}
+
+.show{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
+}
+
+.FullPageError{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(---pinkColor)
+}
