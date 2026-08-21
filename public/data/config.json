@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "siteTitle": "Ashik Rai — Software Engineer",
+    "favicon": "/assets/favicon.png",
+    "themeAccent": "#6EF2AE"
+  },
+  "profile": {
+    "name": "Ashik Rai",
+    "initials": "AR",
+    "role": "SOFTWARE ENGINEER",
+    "tagline": "Backend-first Engineer (C++, Go, gRPC) who also ships full-stack | Observability & Systems Reliability",
+    "location": "Bengaluru, Karnataka, India 🇮🇳",
+    "email": "ashikthulungrai7@gmail.com",
+    "phone": "+91 8597544064",
+    "avatar": "/assets/avatar.jpg",
+    "resumeUrl": "/assets/resume.pdf",
+    "bioShort": "Hi there, I'm Ashik — a Software Engineer based in India, currently working at IBM.",
+    "bioLong": "Backend-focused Software Engineer with 6+ years of experience designing and building high-performance, reliable systems in C++, Go, and JavaScript/TypeScript, complemented by strong front-end delivery using React.js. Proven track record building observability and telemetry pipelines (eBPF, Prometheus, Grafana), production-grade APIs (gRPC, Protocol Buffers, REST), and payment platforms for global banking and airline clients. Hands-on experience designing and building Agentic AI workflows with n8n and Flowise — including Agentic RAG pipelines, MCP server/client integrations, vector-embedding search with Supabase, and voice-enabled conversational agents — and applying AI-assisted development tools to accelerate delivery and improve code quality. Adept at cross-functional collaboration, rapid learning of new technology stacks, and translating complex requirements into scalable, production-ready solutions.",
+    "availableForWork": true,
+    "yearsActive": 2020
+  },
+  "social": {
+    "github": "ashikrai",
+    "linkedin": "ashik-rai",
+    "twitter": "",
+    "youtube": "",
+    "instagram": "",
+    "medium": "@ashikthulungrai7"
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "username": "ashikrai",
+      "pinnedRepos": [],
+      "maxRepos": 6,
+      "excludeForks": true
+    },
+    "linkedin": {
+      "enabled": false,
+      "note": "LinkedIn's public API does not permit third-party portfolio scraping/embedding. See data/linkedin.sample.json — populate manually or via an authorized export, then flip 'enabled' to true.",
+      "profileUrl": "https://www.linkedin.com/in/ashik-rai/"
+    }
+  },
+  "services": [
+    { "title": "Backend Systems", "tags": ["gRPC", "Distributed Systems", "Observability"] },
+    { "title": "Agentic AI Automation", "tags": ["n8n", "Flowise", "RAG", "MCP", "Interactive Voice Agents", "Chat Agents"] },
+    { "title": "Frontend Engineering", "tags": ["React", "TypeScript", "Redux"] },
+    { "title": "Security & Reliability", "tags": ["SLO/SLA", "Monitoring", "Vulnerability Scanning"] }
+  ],
+  "skills": {
+    "languages": ["C++", "Go", "JavaScript", "TypeScript", "Python", "SQL"],
+    "frameworks": ["React.js", "Redux", "Node.js", "GraphQL", "Express.js", "Material UI", "Tailwind CSS"],
+    "infra": ["Docker", "IBM Cloud", "AWS (MQTT, Polly)", "MySQL", "MongoDB", "Redis", "Supabase"],
+    "tools": ["Git", "Grafana", "Prometheus", "PromQL", "eBPF", "Selenium", "Fortify", "BlackDuck", "Prisma", "n8n", "Flowise"]
+  },
+  "experience": [
+    {
+      "company": "IBM",
+      "role": "Software Engineer",
+      "start": "2025",
+      "end": "Present",
+      "description": [
+        "Designed and developed a lightweight flow collection service from scratch to replace Skydive for IBM Cloud, leveraging eBPF probes to collect network flow statistics (packets and bytes) directly from the Linux kernel and NIC.",
+        "Reduced memory footprint, binary size, and operational overhead of the network telemetry pipeline while maintaining full flow-data coverage for IBM Cloud customers.",
+        "Automated multi-region alert deployment verification via the IBM Cloud API , eliminating manual region-by-region checks.",
+        "Designed and built a React.js monitoring application from the ground up, integrating IBM Cloud Services, reducing status monitoring effort by over 90%.",
+        "Implemented centralized, multi-region alert report generation, for deployment status tracking across team.",
+        "Designed and developed Grafana dashboards for production observability, visualizing historical metrics, time-series data, anomaly patterns, and system health, enabling faster issue detection and root cause analysis.",
+        "Built and maintained metric-based alerts using Prometheus and PromQL , and log-based alerts using IBM Cloud Logs (ICL) to drive performance optimization and Service Level Management (SLOs), proactively monitoring production environments.",
+        "Shipped new product features in Fabcon and IOBricks, including enabling core dump generation for improved debugging, introducing new application metrics to enhance observability, and strengthening production readiness.",
+        "Built internal automation tooling that streamlined the alert-creation lifecycle, reducing manual engineering effort.",
+        "Defined alerting strategies and mitigation runbooks, supporting rapid incident recovery and improved production reliability."
+      ],
+      "source": "manual"
+    },
+    {
+      "company": "Amadeus Labs",
+      "role": "Software Engineer II",
+      "start": "2024",
+      "end": "2025",
+      "description": [
+        "Led security scanning across multiple repositories using Fortify, BlackDuck, Secrets, and Prisma, identifying and remediating exploitable vulnerabilities prior to production deployment.",
+        "Triaged scan findings end-to-end, prioritizing legitimate risks and suppressing false positives to keep remediation focused and efficient.",
+        "Generated comprehensive reports for multiple airline clients by querying databases and using tools such as SI-Viewer and custom scripts.",
+        "Partnered with cross-functional development teams to translate scan insights into actionable code-quality and security best practices."
+      ],
+      "source": "manual"
+    },
+    {
+      "company": "Verifone",
+      "role": "Software Engineer",
+      "start": "2021",
+      "end": "2024",
+      "description": [
+        "Built and deployed a Python (Paramiko) automation tool that cut manual reporting effort by 95% for major clients.",
+        "Integrated AWS MQTT service into a payment application to enable real-time system updates and bank notifications for merchants, improving customer acquisition.",
+        "Integrated AWS Polly into payment workflows, enhancing user experience and driving more business customers.",
+        "Pioneered BScanC payment functionality for the Thailand Payment Application, expanding market capabilities.",
+        "Modernized key management by building a new Key-Injection Tool to replace legacy processes.",
+        "Developed payment applications in C++ and Android for industry clients HDFC, SBI, FirstData, Hitachi, KBANK (Thailand)."
+      ],
+      "source": "manual"
+    },
+    {
+      "company": "Lokibots (Remote)",
+      "role": "Full Stack Developer",
+      "start": "2020",
+      "end": "2021",
+      "description": [
+        "Developed and enhanced responsive web applications using React.js, TypeScript, Node.js, and GraphQL . Built reusable UI components with Material UI with efficient state management using Redux.",
+        "Contributed to a full redesign and modernization of the company’s web platform, improving UX and performance.",
+        "Championed code quality and maintainability through SASS, ES6, TypeScript, GraphQL adoption and best-practice advocacy."
+      ],
+      "source": "manual"
+    }
+  ],
+  "education": [
+    {
+      "school": "Sri Sathya Sai Institute of Higher Learning",
+      "degree": "M.Tech in Computer Science (CGPA: 7.4)",
+      "start": "2018",
+      "end": "2020"
+    },
+    {
+      "school": "Sri Sathya Sai Institute of Higher Learning",
+      "degree": "Integrated Master of Computer Application - ICAP (CGPA: 7.6)",
+      "start": "2013",
+      "end": "2018"
+    }
+  ],
+  "certifications": [
+    { "name": "Agentic AI Development with n8n (Agentic RAG, Voice Agents, Vector Embeddings)", "issuer": "Udemy", "year": "2025" },
+    { "name": "gRPC (Golang) Master Class: Build Modern API & Microservices", "issuer": "Udemy", "year": "" },
+    { "name": "Complete Guide to Protocol Buffers", "issuer": "Udemy", "year": "" },
+    { "name": "Selenium IDE - Basics of Test Automation", "issuer": "Udemy", "year": "" },
+    { "name": "Agile Project Management", "issuer": "Google (Coursera)", "year": "" },
+    { "name": "Object-Oriented Programming in Golang", "issuer": "Coursera", "year": "" },
+    { "name": "MongoDB and MongoDB Atlas", "issuer": "Coursera", "year": "" }
+  ],
+  "testimonials": [
+    {
+      "quote": "I have known Ashik for nine years at the time of writing this recommendation: initially as (closely known) junior at my college and later as a colleague in Verifone. One thing that defines him is his nature of giving his 100% to anything at hand. He is ready to take up all the time that he can afford but always ends up with the finest outcome he could have ever achieved. As a person, though he seems little introvert in a new environment, once he has opened up he can lit up any team. Technically, he is a programmer from heart (passion driven profession). I would not think twice for an opportunity to work with him.",
+      "name": "Basanta Sharma",
+      "linkedin": "https://www.linkedin.com/in/bsnta/",
+      "title": "Senior Software Engineer @ IBM Cloud"
+    },
+    {
+      "quote": "Hard Working and very creative mind, he can adapt any change in the work.",
+      "name": "Gigme Lepcha",
+      "linkedin": "https://www.linkedin.com/in/gigme/",
+      "title": "Full-Stack Developer @ BOSCH"
+    }
+  ],
+  "contact": {
+    "formEndpoint": "",
+    "formNote": "Wire formEndpoint to Formspree/Netlify Forms/your API to receive submissions."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_readme": "LinkedIn does not offer a public API for reading arbitrary profiles' experience/education/certifications — their official API only returns data for the authenticated member and requires a partnership-approved OAuth app. There is no client-side or server-side call a static portfolio site can legally/technically make to 'pull' someone else's LinkedIn data live. To use LinkedIn content here: (1) export it yourself from LinkedIn (Settings > Data Privacy > Get a copy of your data), or (2) use LinkedIn's official OAuth 'Sign In with LinkedIn' + Profile API from a backend you control and cache the result into a file shaped like this one, then point config.json's integrations.linkedin at it. This file shows the expected shape so the render code (js/linkedin.js) has something to consume once populated.",
+  "experience": [
+    {
+      "company": "Nimbus Cloud",
+      "role": "Senior Software Engineer",
+      "start": "2022",
+      "end": "Present",
+      "description": "Leading backend architecture for a multi-tenant billing platform.",
+      "source": "linkedin"
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Texas at Austin",
+      "degree": "B.S. Computer Science",
+      "start": "2015",
+      "end": "2019"
+    }
+  ],
+  "certifications": [
+    { "name": "AWS Certified Solutions Architect", "issuer": "Amazon Web Services", "year": "2023" }
+  ],
+  "skills": ["TypeScript", "Python", "Go", "System Design", "Leadership"]
+}
