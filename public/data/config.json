@@ -2,7 +2,8 @@
   "meta": {
     "siteTitle": "Ashik Rai — Software Engineer",
     "favicon": "/assets/favicon.png",
-    "themeAccent": "#6EF2AE"
+    "darkThemeAccent": "#6EF2AE",
+    "lightThemeAccent": "#F2F1ED"
   },
   "profile": {
     "name": "Ashik Rai",
@@ -15,7 +16,7 @@
     "avatar": "/assets/avatar.jpg",
     "resumeUrl": "/assets/resume.pdf",
     "bioShort": "Hi there, I'm Ashik — a Software Engineer based in India, currently working at IBM.",
-    "bioLong": "Backend-focused Software Engineer with 6+ years of experience designing and building high-performance, reliable systems in C++, Go, and JavaScript/TypeScript, complemented by strong front-end delivery using React.js. Proven track record building observability and telemetry pipelines (eBPF, Prometheus, Grafana), production-grade APIs (gRPC, Protocol Buffers, REST), and payment platforms for global banking and airline clients. Hands-on experience designing and building Agentic AI workflows with n8n and Flowise — including Agentic RAG pipelines, MCP server/client integrations, vector-embedding search with Supabase, and voice-enabled conversational agents — and applying AI-assisted development tools to accelerate delivery and improve code quality. Adept at cross-functional collaboration, rapid learning of new technology stacks, and translating complex requirements into scalable, production-ready solutions.",
+    "bioLong": "I'm a Backend-focused Software Engineer with 6+ years of experience designing and building high-performance, reliable systems in C++, Go, and JavaScript/TypeScript, complemented by strong front-end delivery using React.js. Proven track record building observability and telemetry pipelines (eBPF, Prometheus, Grafana), production-grade APIs (gRPC, Protocol Buffers, REST), and payment platforms for global banking and airline clients. Hands-on experience designing and building Agentic AI workflows with n8n and Flowise — including Agentic RAG pipelines, MCP server/client integrations, vector-embedding search with Supabase, and voice-enabled conversational agents — and applying AI-assisted development tools to accelerate delivery and improve code quality. Adept at cross-functional collaboration, rapid learning of new technology stacks, and translating complex requirements into scalable, production-ready solutions.",
     "availableForWork": true,
     "yearsActive": 2020
   },

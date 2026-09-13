@@ -10,6 +10,8 @@ import Testimonials from './components/Testimonials.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import CursorDot from './components/CursorDot.jsx';
+import { ThemeProvider } from "./components/theme-provider"
+
 
 export default function App() {
   const { config, error } = useConfig();
@@ -33,10 +35,10 @@ export default function App() {
 
   // Apply theme accent + document title once config is ready
   document.title = config.meta.siteTitle;
-  document.documentElement.style.setProperty('--accent', config.meta.themeAccent || '#6EF2AE');
+  document.documentElement.style.setProperty('--accent', config.meta.lightThemeAccent || '#6EF2AE');
 
   return (
-    <>
+    <ThemeProvider config={config} defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="grain"></div>
       <CursorDot />
       <Nav config={config} />
@@ -51,6 +53,6 @@ export default function App() {
         <Contact config={config} />
       </main>
       <Footer config={config} />
-    </>
+    </ThemeProvider>
   );
 }

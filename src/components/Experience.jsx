@@ -30,8 +30,8 @@ export default function Experience({ config }) {
               <div className="timeline-company">{e.company}</div>
               <ol>
                 {
-                  e.description.map((data) => (
-                    <li className="timeline-desc">{data || ''}</li>
+                  e.description.map((data, index) => (
+                    <li key={index} className="timeline-desc">{data || ''}</li>
                   ))
                 }
               </ol>

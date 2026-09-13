@@ -2,7 +2,8 @@
   "meta": {
     "siteTitle": "Ashik Rai — Software Engineer",
     "favicon": "/assets/favicon.png",
-    "themeAccent": "#6EF2AE"
+    "darkThemeAccent": "#6EF2AE",
+    "lightThemeAccent": "#F2F1ED"
   },
   "profile": {
     "name": "Ashik Rai",
