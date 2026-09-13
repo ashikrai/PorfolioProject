@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import CodeBlock from "./CodeBlockComp"
+import {AboutMeCpp, AboutMeGo, AboutMeJs, AboutMePython} from "../assets/consts/about_me"
 
 export default function Hero({ config }) {
   const [time, setTime] = useState('');
@@ -15,24 +17,37 @@ export default function Hero({ config }) {
   const marqueeItems = skills.length ? skills : ['Add skills to config.json'];
   const looped = [...marqueeItems, ...marqueeItems];
 
+  const code = [
+    { language: "cpp", filename: "aboutMe.cpp", code: AboutMeCpp },
+    { language: "go", filename: "aboutMe.go", code: AboutMeGo },
+    { language: "py", filename: "aboutMe.py", code: AboutMePython },
+    { language: "js", filename: "aboutMe.js", code: AboutMeJs },
+  ];
+
+
   return (
     <section className="hero" id="hero">
       <div className="hero-bg"><div className="scan"></div></div>
-      <div className="hero-inner">
-        <h1 className="hero-title">
-          <span className="line reveal is-visible">{config.profile.name}</span>
-          <span className="line reveal is-visible accent">{config.profile.role}</span>
-          <p className="eyebrow mono reveal is-visible">
-            <span className="dot-live"></span>
-            <span>{config.profile.location}</span> · <span>{time}</span>
-          </p>
-        </h1>
-        <p className="hero-sub reveal is-visible">{config.profile.bioShort}</p>
-        <div className="hero-actions reveal is-visible">
-          <a href="#work" className="btn btn-primary"><span>View Work</span><i>→</i></a>
-          <a href={config.profile.resumeUrl || '#'} className="btn btn-ghost" download>
-            <span>Résumé</span><i>↓</i>
-          </a>
+      <div className="hero-inner1 flex flex-row gap-14">
+        <div className="!pb-4">
+          <CodeBlock code={code} />
+        </div>
+        <div className="flex-1">
+          <h1 className="hero-title">
+            <span className="line reveal is-visible">{config.profile.name}</span>
+            <span className="line reveal is-visible accent">{config.profile.role}</span>
+            <p className="eyebrow mono reveal is-visible">
+              <span className="dot-live"></span>
+              <span>{config.profile.location}</span> · <span>{time}</span>
+            </p>
+          </h1>
+          <p className="hero-sub reveal is-visible">{config.profile.bioShort}</p>
+          <div className="hero-actions reveal is-visible">
+            <a href="#work" className="btn btn-primary"><span>View Work</span><i>→</i></a>
+            <a href={config.profile.resumeUrl || '#'} className="btn btn-ghost" download>
+              <span>Résumé</span><i>↓</i>
+            </a>
+          </div>
         </div>
       </div>
       <div className="marquee">

@@ -80,7 +80,7 @@ Two supported paths, both handled by `useLinkedin()` in `src/hooks/useConfig.js`
 
 ## Customizing the look
 
-Change `meta.themeAccent` in config.json for a one-line accent color swap, or
+Change `meta.darkThemeAccent` in config.json for a one-line accent color swap, or
 edit the `:root` tokens at the top of `src/styles/style.css` for a deeper
 restyle.
 
